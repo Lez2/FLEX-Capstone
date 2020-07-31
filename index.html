@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=5.0">
+  <title>FL.EX</title>
+    <link rel='stylesheet' href='style.css' media="screen">
+    <link rel='stylesheet' href='popup.css'>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/jquery.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+</head>
+
+<body>
+  <section id="homepage" class="page green">
+    <div class="wrapper">
+      <h2 class="title" data-text="flEX">FLEX<i></i></h2>
+    </div>
+    <div>
+    <a href="#howto"class="btnt">Enter<i></i></a>
+  </div>
+</div>
+  <div class="topnav">
+    <a class="active"></a>
+    <a href="#homepage" onclick='restart()'>Home</a>
+    <a href="#howto" onclick='restart()'>How To</a>
+    <div class='total'>Expenses:</div>
+  </div>
+</section>
+
+<section id="howto" class="page howto">
+
+  <h1 class="h1">How to Play:</h1>
+  <h2>Making Financial Decisions</h2>
+<p>This game focuses on the management of day-to-day expenses. This is an opportunity to have a detached interaction with common life decisions, while learning about many personal finance concepts.<br> <br>
+  You will be presented with various scenarios and be required to make a decision. Each decision you make affects some aspect of your life, whether it is your wellbeing, your bank account, or both. The game is designed to make you think about how to balance life decisions. Everyone’s situation and priorities are different so we could never capture all possibilities. Nevertheless, we hope you enjoy this financial literacy experience. Good Luck and Enjoy!!!!
+  </p>
+  <div class="topnav">
+    <a class="active"></a>
+    <a href="#homepage" onclick='restart()'>Home</a>
+    <a href="#howto" onclick='restart()'>How To</a>
+    <div class='total'>Expenses:</div>
+  </div>
+  <div>
+    <a href="#postgrad" class="btn">Start Adulting<i></i></a>
+  </div>
+</section>
+
+<section id="postgrad" class="page green">
+    <h1>The Big Decision</h1>
+    <p>You must decide whether you will go to college or enter the job market. What is your next step in life?</p>
+    <div>
+      <a   href="#cq1" class="btn" >College Path<i></i></a>
+      <a   href="#jq1" class="btn" >Career Path<i></i></a>
+
+
+    </div>
+</section>
+
+<section id="jq1" class="page green">
+  <p>Which job will you pick?</p>
+  <div>
+    <a   href="#jq2" class="btn" >Real Estate Agent<i></i></a>
+    <a   href="#jq2" class="btn" >Front of House Worker<i></i></a>
+    <a   href="#jq2" class="btn">Physical Therapy Aide<i></i></a>
+
+  </div>
+</section>
+
+<section id="jq2" class="page blue">
+  <img class="button" id="one" data-modal="modalOne" src="https://img.icons8.com/android/48/000000/info.png"></img>
+  <p> It is time to get your first credit card. Before you decide, you need to understand exactly how they work. Otherwise, you can end up in some serious debt that is hard to dig out of.
+      CLICK THE INFORMATION ICON! <br> Which credit card will you pick?</p>
+  <div>
+    <a href="#jq3" class="btnCC" onclick="add(this,'total')">Miracle Banks<br>Credit limit: $500<br>Intro APR: 0% for 6 months<br> Regular APR: 15%<i></i></a>
+    <a href="#jq3" class="btnCC" onclick="add(this,'total')">Vertex Financial<br>Credit limit: $1200<br>Promo: Free year of Amazon Prime<br> Regular APR: 18%<i></i></a>
+    <a href="#jq3" class="btnCC" onclick="add(this,'total')">Vertex Financial<br>Credit limit: $400<br>Promo: 2% Cashback on all Purchases<br>Regular APR: 14%<i></i></a>
+  </div>
+  <div id="modalOne" class="modal">
+    <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><strong>What is a Credit Card?</strong><br> A credit card is a plastic or metal card that allows you to access a line of credit offered by the bank that issued the card. Every time you pay for something with a credit card, you're borrowing money from the card issuer to cover the purchase. You then have to pay that money back, either in full at the end of the month or over time.<br><br>
+          <strong>Why get a Credit Card?</strong><br>Build credit: Establishing a good payment history can help you prove your creditworthiness, allowing you to borrow money in the future at lower rates. <br>
+          Flexibility: Though it's best to always pay your balance in full each month, a credit card allows you to pay for things over time, which helps when you have a major purchase or handle a financial emergency.</p>
+          <p style="text-align: center;"><strong>Here are concepts associated with cardit cards to keep in mind</strong></p>
+          <p><u>Credit limit:</u> When you’re approved for a credit card, the bank authorizes a credit limit, which is the maximum amount you can borrow.<br>
+          <u>Interest rates:</u> Credit Card interest rates tell you the cost to owning a credit card company money from month to month. The interest rate is referred to as APR (annual percentage rate). On average Interest rates range from 15% to 18%.<br>
+          <u>Payments:</u>You will receive a bill on a monthly basis. You have the option of paying a certain minimum amount, paying the whole balance in full, or paying some amount in between. <strong>WARNING:</strong> Paying just the minimum every month is ultimately the most expensive option, since it will cost you the most in interest. Paying in full is the best option because it allows you to avoid paying any interest on purchases. If you do not make the minimum payment you will be charged a late feel, and your credit score may be affected.
+          </p>
+      </div>
+  </div>
+</section>
+
+<section id="jq3" class="page green">
+  <p>Well that was STRESSFUL, so maybe you should take a nap. For a week, maybe?
+    Okay, you have work to do, so maybe a yoga class is a little more practical.
+     Do you go to the real class that costs money, or do you instead just watch some videos online?
+  </p>
+  <div>
+    <a  href="#jq3-1" class="btn">Watch videos online<i></i></a>
+    <a  data-money="20" href="#jq3-2" class="btn"onclick="add(this,'total')">Take the yoga class <i></i></a>
+
+  </div>
+</section>
+
+  <section id="jq3-1" class="page orange">
+    <p>
+      You may have saved a few bucks, but does yoga in your
+     (dorm/bed)room really relax you? Was the additional stress worth the savings?
+    </p>
+    <div>
+      <a href="#jq4" class="btn">Continue<i></i></a>
+
+    </div>
+    </section>
+
+    <section id="jq3-2" class="page orange">
+      <p>
+        Money’s tight, but the class helps you to recenter.
+        You might need to save elsewhere, but the money was definitely well spent.
+      </p>
+      <div>
+        <a href="#jq4" class="btn">Continue<i></i></a>
+
+      </div>
+      </section>
+
+  <section id="jq4" class="page blue">
+    <p>
+      Love is beautiful, but sometimes relationships can cloud our money sense. This morning,
+       your significant other asks you to cosign a loan for them. What will you do?
+    </p>
+    <div>
+      <a data-money="400"  href="#jq4-1" class="btn" onclick="add(this,'total')">Cosign<i></i></a>
+      <a href="#jq4-2" class="btn" >Don't cosign<i></i></a>
+
+
+    </div>
+  </section>
+
+<section id="jq4-1" class="page orange">
+<img class="button" id="two" data-modal="#modalTwo" src="https://img.icons8.com/android/48/000000/info.png"/>
+<p>
+  You should’ve known better than to trust someone who doesn't pick up their socks.
+  Your credit has dropped, and even worse you could even be held liable for your S.O.
+  not making their payments, being required to pay those yourself.
+</p>
+<div>
+ <a href="#jq5" class="btn">Continue<i></i></a>
+</div>
+<div id="modalTwo" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><strong>What is a cosigner?</strong> <br>
+      A cosigner is a person who helps another person apply for a loan and legally agrees to pay off the debt if the primary borrower isn’t able to make the loan payments. </p>
+    <p><strong>What is a credit score?</strong>A credit score is a number between 300-850 that represents someone’s creditworthiness. The score is based on your credit history including: repayment history, level of debt, and the number of credit lines you have. </p>
+
+  </div>
+</div>
+</section>
+
+<section id="jq4-2" class="page orange">
+  <img class="button" id="three" data-modal="#modalThree" src="https://img.icons8.com/android/48/000000/info.png"/>
+  <p>
+    Congratulations, your credit and your relationship are both still intact.
+   If you had cosigned, you would have been held liable for making sure your S.O.
+  </p>
+  <div>
+   <a href="#jq5" class="btn">Continue<i></i></a>
+  </div>
+  <div id="modalThree" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p><strong>What is a cosigner?</strong> <br>
+        A cosigner is a person who helps another person apply for a loan and legally agrees to pay off the debt if the primary borrower isn’t able to make the loan payments. </p>
+      <p><strong>What is a credit score?</strong>A credit score is a number between 300-850 that represents someone’s creditworthiness. The score is based on your credit history including: repayment history, level of debt, and the number of credit lines you have.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="jq5" class="page green">
+  <p>
+    Tonight is your friend’s birthday. You are really excited to spend some time with your friends,
+    but they’ve chosen a pretty pricey restaurant. Do you go to dinner, or feast at home with some ramen?
+  </p>
+  <div>
+    <a data-money="40" href="#jq5-1" class="btn" onclick="add(this,'total')">Go out with friends<i></i></a>
+    <a  href="#jq5-2" class="btn" >Eat at home<i></i></a>
+
+  <!-- <div class="btn" id="answer2">Price</div> -->
+  </div>
+</section>
+
+<section id="jq5-1" class="page orange">
+  <img class="button" id="four" data-modal="#modalFour" src="https://img.icons8.com/android/48/000000/info.png"/>
+<p>
+  Spending time with friends can be fun, but it can also be costly.
+  Because of your big purchase, you overdraw on your account. Instead of it denying your purchase,
+  you’re able to get your meal because you have overdraft protection. Sadly, there’s (of course) a fee...
+  maybe ramen is in the cards for tomorrow?
+</p>
+<div>
+ <a href="#jq6" class="btn">Continue<i></i></a>
+</div>
+<div id="modalFour" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="text-align: center;"><strong>Overdraft protection</strong> <br>
+    <p>Overdraft protection is a service where a bank will cover a transaction if it is greater than your balance and charge you an overdraft fee so the transaction goes through successfully.
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="jq5-2" class="page orange">
+<img class="button" id="five" data-modal="#modalFive" src="https://img.icons8.com/android/48/000000/info.png"/>
+<p>
+  While your wallet is full, your heart might not be.
+  How might you be able to celebrate with a friend without breaking the bank?
+</p>
+<div>
+ <a href="#jq6" class="btn">Continue<i></i></a>
+</div>
+<div id="modalFive" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="text-align: center;"><strong>Overdraft protection</strong> <br>
+    <p>Overdraft protection is a service where a bank will cover a transaction if it is greater than your balance and charge you an overdraft fee so the transaction goes through successfully.
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="jq6" class="page blue">
+  <p>
+    Now that you’ve been working for a few months, you have finally saved up enough money to move out,
+    if you want. It might break the bank, but that’s cheaper than destroying your sanity.
+    Do you get an apartment with some roommates you find online, or do you just stay at home
+    (at least there’s free laundry and home cooked meals)?
+  </p>
+  <div>
+    <a data-money="2000 " href="#jq6-1" class="btn" onclick="add(this,'total')">Move out<i></i></a>
+    <a  href="#jq6-2" class="btn" >Stay at home<i></i></a>
+
+  <!-- <div class="btn" id="answer2">Price</div> -->
+  </div>
+</section>
+
+<section id="jq6-1" class="page orange">
+<p>
+  The price is hefty, but at least there’s some roommates to split the costs with.
+  They seem really… interesting, but hey, beggars can’t be choosers.
+</p>
+<div>
+ <a href="#jq7" class="btn">Continue<i></i></a>
+
+</div>
+</section>
+
+<section id="jq6-2" class="page orange">
+<p>
+  So your childhood bedroom may not inspire you as an adult, but it’s cheap,
+  and cheap is always best. (Right?)
+
+</p>
+<div>
+ <a href="#jq7" class="btn">Continue<i></i></a>
+
+</div>
+</section>
+
+<section id="jq7" class="page green">
+  <p>
+    You keep getting calls about your credit card being used in a different state.
+    It seems sketchy, but you're wondering if it might just be real. Should you just ignore
+    it and hope for the best, or should you report it to your credit card company?
+  </p>
+  <div>
+    <a  href="#jq7-1" class="btn" >Report it<i></i></a>
+    <a data-money="300" href="#jq7-2" class="btn" onclick="add(this,'total')">Ignore it<i></i></a>
+
+  </div>
+</section>
+
+<section id="jq7-1" class="page orange">
+  <img class="button" id="six" data-modal="#modalSix" src="https://img.icons8.com/android/48/000000/info.png"/>
+<p>
+  You avoided a major disaster, you call the credit card company to file a report.
+  All the money has been sent back to your account and a new card is on the way to your home.
+</p>
+<div>
+ <a href="#jq8" class="btn">Continue<i></i></a>
+</div>
+<div id="modalSix" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><strong>fraud Protection Practices</strong></p>
+    <ul style="text-align: left;">
+      <li>Don’t give your account number to anyone on the phone unless you’ve made the call to a company you know to be reputable. Do an online search first for reviews or complaints.</li>
+      <li>During a transaction, keep your eye on your card. Make sure you get it back before you walk away.</li>
+      <li>Never sign a blank receipt. Draw a line through any blank spaces above the total.</li>
+      <li>Save your receipts to compare with your statement.</li>
+      <li>Check your bills promptly and reconcile them with the purchases you’ve made.</li>
+      <li>Report any questionable charges to the card issuer.</li>
+      <li>Notify your card issuer if your address changes or if you will be traveling.</li>
+      <li>Don’t write your account number on the outside of an envelope.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="jq7-2" class="page orange">
+  <img class="button" id="seven" data-modal="#modalSeven" src="https://img.icons8.com/android/48/000000/info.png"/>
+<p>
+  You failed to report the theft and now you've lost $300.
+  But hey, you were kind enough to help pay for a random wedding.
+  That's so generous of you!
+</p>
+<div>
+ <a href="#jq8" class="btn">Continue<i></i></a>
+</div>
+<div id="modalSeven" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><strong>fraud Protection Practices</strong></p>
+    <ul style="text-align: left;">
+      <li>Don’t give your account number to anyone on the phone unless you’ve made the call to a company you know to be reputable. Do an online search first for reviews or complaints.</li>
+      <li>During a transaction, keep your eye on your card. Make sure you get it back before you walk away.</li>
+      <li>Never sign a blank receipt. Draw a line through any blank spaces above the total.</li>
+      <li>Save your receipts to compare with your statement.</li>
+      <li>Check your bills promptly and reconcile them with the purchases you’ve made.</li>
+      <li>Report any questionable charges to the card issuer.</li>
+      <li>Notify your card issuer if your address changes or if you will be traveling.</li>
+      <li>Don’t write your account number on the outside of an envelope.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="jq8" class="page blue">
+  <p>
+    After that fraud issue, you definitely deserve to relax.
+    And what better way to relax than with an adorable animal in your arms.
+    It sounds great, but pets can be a lot of work and expensive, but they can also provide
+    you with unconditional love and stress relief. The adoption fee is $200 dollars, so that’s a factor too.
+    Do you find your furever friend, or do you stick with what you know?
+  </p>
+  <div>
+    <a  href="#jq8-1" class="btn" >Adopt a pupper<i></i></a>
+    <a href="#jq8-2" class="btn" >No pet for you<i></i></a>
+  </div>
+</section>
+
+<section id="jq8-1" class="page orange">
+<p>
+  Animals can bring a lot of joy to your life, but they can also limit your options.
+  Most animals dictate where you can live, how long you can travel, and your work hours.
+  Maybe you should have waited and got a dog in a few years?
+</p>
+<div>
+ <a href="#final" class="btn">Continue<i></i></a>
+</div>
+</section>
+
+<section id="jq8-2" class="page orange">
+<p>
+  You made a tough call, but an animal might make the most sense down the road.
+  And hey, most places will still allow you to have your very own fish!
+</p>
+<div>
+ <a href="#final" class="btn">Continue<i></i></a>
+</div>
+</section>
+
+<section id="final" class="page green">
+  <p><strong> Congratulations on completing the Financial Literacy Experience!! We hope you were able to learn some information which you can apply to your upcoming life decisions. Below there is an overview of topics mentioned on our website as well as links to more resources. Please, feel free to play again and try out all the decisions.</strong></p>
+  <p><strong>Budgeting</strong></p>
+  <p>A budget is nothing more than a spending plan. Budgeting is so important because it allows you to achieve your personal and financial goals. You become more aware of where your money goes on a weekly or monthly basis. Whether you are saving for a car, a home, a trip, or retirement budgeting significantly increase your chances of success. Setting aside some of your money each paycheck can open an entire world of possibilities. Your late teens and twenties are the best times to do the things you want to do. With a spending plan, you’d be surprised at how much you can squeeze out of your income. We recommend using free budgeting apps like Mint or PocketGuard to help you manage your wallet.
+  </p>
+  <p><u>Budgeting Resources</u></p>
+  <a href="https://www.ngpf.org/curriculum/budgeting/" target="_blank">Next Gen Personal Finance: Budgeting</a>
+  <a href="https://www.moneyunder30.com/budgeting-in-your-20s" target="_blank">Budgeting in yout 20s</a>
+  <a href="https://www.nerdwallet.com/article/finance/nerdwallet-budget-calculator" target="_blank">Budget calculator</a>
+
+  <p><strong>Credit</strong></p>
+  <p>Credit is such an important topic that is never discussed until things get bad. Credit is at the center of your financial power! It helps you get the things you will likely need such as a car loan or a mortgage. It is much easier to establish good credit and keep it there than it is to raise a low credit score. Good credit saves you money and opens many opportunities for you. It allows you to receive larger loans with lower interest rates. This can be the difference between whether you can start your own business or buy your first home.</p>
+
+  <p><u>Budgeting Resources</u></p>
+  <a href="https://www.ngpf.org/curriculum/managing-credit/" target="_blank">Next Gen Personal Finance: Credit management</a>
+  <a href="https://mygreatlakes.org/educate/knowledge-center/credit.html#:~:text=Credit%20is%20part%20of%20your,loans%20when%20you%20need%20them." target="_blank">Importance of Credit</a>
+</section>
+
+
+
+<section id="cq1" class="page green">
+  <p>which school will you attend?</p>
+  <div>
+    <a  data-money="25000" href="#cq1-1" class="btn" onclick="add(this,'total')">In-State Public School<i></i></a>
+    <a  data-money="45000" href="#cq1-2" class="btn" onclick="add(this,'total')">Out of State Private School<i></i></a>
+
+  </div>
+</section>
+
+<section id="cq1-1" class="page orange">
+  <p>You save some money and you are closer to your family and friends (you decide if that is a good thing). The rule of thumb is to limit the total amount of student loans you take out to your starting salary after graduation. This is becoming increasingly challenging with rising tuition costs and changes in the unemployment rate.
+  </p>
+  <div>
+    <a href="#cq2" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq1-2" class="page orange">
+  <p>You are paying a little bit more for school, but you’re willing to pay extra to attend your dream school. The rule of thumb is to limit the total amount of student loans you take out to your starting salary after graduation. This is becoming increasingly challenging with rising tuition costs and changes in the unemployment rate.
+  </p>
+  <div>
+    <a href="#cq2" class="btn">Continue<i></i></a>
+  </div>
+</section>
+
+<section id="cq2" class="page blue">
+  <p>which housing option will you choose?</p>
+  <div>
+    <a data-money="4000" href="#cq2-1" class="btn" onclick="add(this,'total')">Single Dorm<i></i></a>
+    <a href="#cq2-2" class="btn" onclick="add(this,'total')">Double Dorm<i></i></a>
+
+  </div>
+</section>
+
+<section id="cq2-1" class="page orange">
+  <p>You might have found your new best friend or the next pain in your ass. At least you saved some money.</p>
+  <div>
+    <a href="#cq3" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq2-2" class="page orange">
+  <p>You thought you'd have peace and quiet , but you live next to an opera singer. At least you have some privacy.</p>
+  <div>
+    <a href="#cq3" class="btn">Continue<i></i></a>
+  </div>
+</section>
+
+<section id="cq3" class="page green">
+  <p>which meal plan will you choose?</p>
+  <div>
+    <a data-money="5000" href="#cq3-1" class="btn" onclick="add(this,'total')">Unlimited Meal Plan<i></i></a>
+    <a data-money="3000" href="#cq3-2" class="btn" onclick="add(this,'total')">Average Meal Plan<i></i></a>
+    <a href="#cq3-3" class="btn" >No Meal Plan<i></i></a>
+  </div>
+</section>
+
+<section id="cq3-1" class="page orange">
+  <p>Your appetite is sure to be satisfied this school year. This luxury cost much more than groceries or the occasional meal out, Bon Appétit.
+  </p>
+  <div>
+    <a href="#cq4" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq3-2" class="page orange">
+  <p>A good middle ground for your first year away from home. Those espressos, smoothies,  and late-night deliveries won’t be covered.
+  </p>
+  <div>
+    <a href="#cq4" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq3-3" class="page orange">
+  <p>Your journey towards culinary mastery begins now. I hope you are prepared to meal prep. When exams come around we wish you the best of luck. It’ll be a coin toss between takeout and starvation.</p>
+  <div>
+    <a href="#cq4" class="btn">Continue<i></i></a>
+  </div>
+</section>
+
+<section id="cq4" class="page blue">
+  <p>You will need a laptop to complete your coursework. Which one will you choose?</p>
+  <div>
+    <a  href="#cq4-1" class="btn" >Use an OLD laptop that was offered to you (FREE)<i></i></a>
+    <a data-money="500" href="#cq4-2" class="btn" onclick="add(this,'total')">Get a laptop that’ll get the job done ($500)<i></i></a>
+    <a data-money="2000" href="#cq4-3" class="btn" onclick="add(this,'total')">Get a most powerful laptop on the market ($2000)<i></i></a>
+  </div>
+</section>
+
+<section id="cq4-1" class="page orange">
+  <p>It takes you 15 mins just to access your reading. Fortunately you can complete your work in the library. Should have known better this laptop runs on Windows Vista.
+  </p>
+  <div>
+    <a href="#cq5" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq4-2" class="page orange">
+  <p>You are perfectly able to complete all your work. Seems like you made a worthwhile investment.
+  </p>
+  <div>
+    <a href="#cq5" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq4-3" class="page orange">
+  <p>You are more than capable of completing your school work. You paid a lot to use google docs and stream netflix...
+  </p>
+  <div>
+    <a href="#cq5" class="btn">Continue<i></i></a>
+  </div>
+</section>
+
+<section id="cq5" class="page green">
+  <p> It's time to explore opportunities for gainful employment. Which Job will you apply for? </p>
+  <div>
+    <a  data-money="400" href="#cq5-1" class="btn" onclick="add(this,'total')">Host/Hostess (20hr/week)<i></i></a>
+    <a  data-money="200" href="#cq5-2" class="btn" onclick="add(this,'total')">Work in the dining hall (12hr/week)<i></i></a>
+    <a  data-money="250" href="#cq5-3" class="btn" onclick="add(this,'total')">Alumni office (8hr/week)<i></i></a>
+    <a  href="#cq5-4" class="btn" >No job<i></i></a>
+  </div>
+</section>
+
+<section id="cq5-1" class="page orange">
+  <p>Your commitment to the “bag” is impressive. You are earning more money than your peers but your grades and social life are suffering.
+  </p>
+  <div>
+    <a href="#cq6" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq5-2" class="page orange">
+  <p>You got the job! Despite the perception your coworkers are super friendly and you get free food all the time. We will see how well you manage to balance school, work, family, and friends.
+  </p>
+  <div>
+    <a href="#cq6" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq5-3" class="page orange">
+  <p>This is a great balance for you. You are able to stay professionally and academically stimulated. Plus you have been introduced to some alumni in your field of interest.
+  </p>
+  <div>
+    <a href="#cq6" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq5-4" class="page orange">
+  <p>You are prioritizing your academic and social experience, but what will you do when you run out of your parents’ money and your friends wanna go out?
+  </p>
+  <div>
+    <a href="#cq6" class="btn">Continue<i></i></a>
+  </div>
+</section>
+
+<section id="cq6" class="page green">
+  <p>Tonight is your friend’s birthday. You are really excited to spend some time off campus, but they’ve chosen a pretty pricey restaurant. Do you go to dinner or save your money?</p>
+  <div>
+    <a data-money="75" href="#cq6-1" class="btn" onclick="add(this,'total')">Go out with friends<i></i></a>
+    <a href="#cq6-2" class="btn">Stay in<i></i></a>
+  </div>
+</section>
+
+<section id="cq6-1" class="page orange">
+  <img class="button" id="eight" data-modal="#modalEight" src="https://img.icons8.com/android/48/000000/info.png"/>
+  <p>Spending time with friends can be fun, but it can also be costly. You end up overdrafting from your checking account. Instead of it denying your purchase, you’re able to get your meal because you have overdraft protection. Sadly, there’s (of course) a fee...maybe you’ll check your balance before you go out next time?
+  </p>
+  <div>
+    <a href="#cq7" class="btn">Continue<i></i></a>
+  </div>
+  <div id="modalEight" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p style="text-align: center;"><strong>Overdraft protection</strong> <br>
+      <p>Overdraft protection is a service where a bank will cover a transaction if it is greater than your balance and charge you an overdraft fee so the transaction goes through successfully.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="cq6-2" class="page orange">
+  <img class="button" id="nine" data-modal="#modalNine" src="https://img.icons8.com/android/48/000000/info.png"/>
+  <p>While your wallet is full, your heart might not be. How might you be able to celebrate with a friend without breaking the bank?
+  </p>
+  <div>
+    <a href="#cq7" class="btn">Continue<i></i></a>
+  </div>
+  <div id="modalNine" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p style="text-align: center;"><strong>Overdraft protection</strong> <br>
+      <p>Overdraft protection is a service where a bank will cover a transaction if it is greater than your balance and charge you an overdraft fee so the transaction goes through successfully.
+      </p>
+    </div>
+</section>
+
+<section id="cq7" class="page green">
+  <img class="button" id="ten"data-modal="#modalTen" src="https://img.icons8.com/android/48/000000/info.png"/>
+  <p> It is time to get your first credit card. Before you decide, you need to understand exactly how they work. Otherwise, you can end up in some serious debt that is hard to dig out of.
+    CLICK THE INFORMATION ICON! <br> Which credit card will you pick?</p>
+  <div>
+    <a  href="#cq8" class="btnCC">Miracle Banks<br>Credit limit: $500<br>Intro APR: 0% for 6 months<br> Regular APR: 15%<i></i></a>
+    <a  href="#cq8" class="btnCC">Vertex Financial<br>Credit limit: $1200<br>Promo: Free year of Amazon Prime<br> Regular APR: 18%<i></i></a>
+    <a  href="#cq8" class="btnCC">Vertex Financial<br>Credit limit: $400<br>Promo: 2% Cashback on all Purchases<br>Regular APR: 14%<i></i></a>
+  </div>
+  <div id="modalTen" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><strong>What is a Credit Card?</strong><br> A credit card is a plastic or metal card that allows you to access a line of credit offered by the bank that issued the card. Every time you pay for something with a credit card, you're borrowing money from the card issuer to cover the purchase. You then have to pay that money back, either in full at the end of the month or over time.<br><br>
+          <strong>Why get a Credit Card?</strong><br>Build credit: Establishing a good payment history can help you prove your creditworthiness, allowing you to borrow money in the future at lower rates. <br>
+          Flexibility: Though it's best to always pay your balance in full each month, a credit card allows you to pay for things over time, which helps when you have a major purchase or handle a financial emergency.</p>
+          <p style="text-align: center;"><strong>Here are concepts associated with cardit cards to keep in mind</strong></p>
+          <p><u>Credit limit:</u> When you’re approved for a credit card, the bank authorizes a credit limit, which is the maximum amount you can borrow.<br>
+          <u>Interest rates:</u> Credit Card interest rates tell you the cost to owning a credit card company money from month to month. The interest rate is referred to as APR (annual percentage rate). On average Interest rates range from 15% to 18%.<br>
+          <u>Payments:</u>You will receive a bill on a monthly basis. You have the option of paying a certain minimum amount, paying the whole balance in full, or paying some amount in between. <strong>WARNING:</strong> Paying just the minimum every month is ultimately the most expensive option, since it will cost you the most in interest. Paying in full is the best option because it allows you to avoid paying any interest on purchases. If you do not make the minimum payment you will be charged a late feel, and your credit score may be affected.
+          </p>
+      </div>
+  </div>
+</section>
+
+<section id="cq8" class="page blue">
+  <p>Spring break is approaching. Your friends have been indecisive about your spring break location. They have left the decision in your hands. Leader, where will we go?
+  </p>
+  <div>
+    <a  data-money="300" href="#cq8-1" class="btn" onclick="add(this,'total')">Road Trip<i></i></a>
+    <a  data-money="2500" href="#cq8-2" class="btn" onclick="add(this,'total')">Miami<i></i></a>
+    <a  href="#cq8-3" class="btn" >The library<i></i></a>
+  </div>
+</section>
+
+<section id="cq8-1" class="page orange">
+  <p>The van you rented was a bit packed and had a weird odor but overall you had a great time with your friends. You picked up some souvenirs for your family.
+  </p>
+  <div>
+    <a href="#final" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq8-2" class="page orange">
+  <p>You picked up a nice tan but your bank account got burnt. It may take you a couple months to recover.
+  </p>
+  <div>
+    <a href="#final" class="btn">Continue<i></i></a>
+  </div>
+</section>
+<section id="cq8-3" class="page orange">
+  <p>There was a mutiny amongst your friend group. Looks like you’ll be in the library alone while your friends will be sunbathing.
+  </p>
+  <div>
+    <a href="#final" class="btn">Continue<i></i></a>
+  </div>
+</section>
+
+<script>
+    //Smooth Scrolling
+    $('.btn').on('click', function (evt) {
+        if (this.hash !== '') {
+            evt.preventDefault();
+            const hash = this.hash;
+            console.log(hash)
+              if ((hash == "#howto") || (hash == "#postgrad") || (hash == "#jq1")) {
+              $('html,body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+            }
+            else {
+              $('html,body').animate({
+                scrollTop: $(hash).offset().top
+            }, 0);
+            }
+
+
+            //if (hash == "#howto") {
+              //$('html,body').animate({
+                //scrollLeft: $(hash).offset().left
+            //}, 800);
+
+
+        }
+    })
+</script>
+
+<script>
+$(".button").on("click", function() {
+  var modal = $(this).data("modal");
+  $(modal).show();
+});
+
+$(".modal").on("click", function(e) {
+  var className = e.target.className;
+  if(className === "modal" || className === "close"){
+    $(this).closest(".modal").hide();
+  }
+});
+
+</script>
+<script src="style.css"></script>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/jquery.js"></script>
+<script src="addTotal.js"></script>
+
+</body>
+</html>
